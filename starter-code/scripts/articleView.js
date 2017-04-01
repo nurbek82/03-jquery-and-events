@@ -32,7 +32,7 @@ articleView.handleAuthorFilter = function() {
     } else {
     /* Otherwise, we should:
         1. Show all the articles except the template */
-
+        $('article:not(.template)').show();
     }
     $('#category-filter').val('');
   });
